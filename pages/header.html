@@ -1,11 +1,10 @@
 <header>
     <div class="header">
         <div class="headerWrap">
-            <div class="brandName">
-                <a href="#" class="logo">Mu-Se Kuo</a>
-            </div>
-            <div class="hamburger">
-                <i class="fa-solid fa-bars"></i>
+            <div class="brandContainer">
+                <div class="brandName">
+                    <a href="#" class="logo">Mu-Se Kuo</a>
+                </div>
             </div>
             <div class="headerNavbar">
                 <ul>
@@ -20,3 +19,10 @@
         </div>
     </div>
 </header>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function () {
+        document.querySelector(".portfolio-navbar").classList.toggle("show");
+    });
+</script>

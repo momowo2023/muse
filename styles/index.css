@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root:not(.light) {
+    --bg-color1: #FFF;
+    --bg-color2: #bfbdbd;
+    --color1: #292929;
+    --color2: #1C1C1C;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Geologica", serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: var(--color1);
+}
+
+
+li {
+    list-style: none;
+}
+
+
+h1,
+h2 {
+    font-optical-sizing: auto;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+p {
+    margin: 0;
+}
+
+/* Style for navigation */
+
+.headerWrap {
+    padding: 20px;
+    transition: .8s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.brandContainer {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.brand-name {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.brandName a {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+
+.headerNavbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.headerNavbar li a {
+    margin-left: 20px;
+    margin-right: 25px;
+    font-size: 1rem;
+    line-height: 72px;
+    font-weight: 600;
+    position: relative;
+}
+
+.headerNavbar a:hover {
+    color: #608aeb;
+
+}
+
+.headerNavbar a:active {
+    color: #ff4500;
+    /* 點擊時顏色 */
+}
+
+footer {
+    padding: 20px 15px;
+    background-color: #292929;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 100;
+}
+
+/* Style for Slider */
+
+.slider {
+    margin: 50px;
+    width: 80%;                       
+    max-width: 1000px;                 
+    padding: 20px; 
+}
+
+
+.personalBackground{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education,
+.exhibition,
+.collection,
+.scholarship {
+    padding: 20px;                            
+    min-width: 200px;                   
+}
