@@ -292,3 +292,212 @@ footer {
     font-size: medium;
 }
 
+/* 單一作品集排版 */
+
+.projects{
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+.projectIntro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 確保內容垂直置中對齊 */
+    width: 100%; /* 使用父容器的全部寬度 */
+}
+
+.projectText{
+    flex: 1;
+    max-width: 25%;
+    margin-top: -10px;
+}
+
+.projectImg{
+    flex:3;
+    max-width: 75%;
+}
+
+.projectImg img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.projectDetail {
+    position: relative;
+    width: 100%;
+    max-width: 1040px; /* 限制容器寬度 */
+    margin: auto; /* 置中 */
+}
+
+.worksText img {
+    width: 100%; /* 確保圖片全寬顯示 */
+    display: block; /* 移除底部的空白間隙 */
+}
+
+.worksText p {
+    position: absolute; /* 絕對定位，疊加在圖片上 */
+    top: 10px; /* 與圖片上方距離 */
+    left: 10px; /* 與圖片左側距離 */
+    margin: 0; /* 移除預設間距 */
+    padding: 10px; /* 添加內距 */
+    font-size: 1rem; /* 字體大小 */
+    border-radius: 5px; /* 圓角背景 */
+    max-width: 80%; /* 限制文字區域寬度 */
+    line-height: 1.5; /* 增加行間距 */
+    z-index: 10; /* 保證文字位於圖片上層 */
+    width: 25%;
+}
+
+/* 353行後是GPT生成讓上下class 左右都對稱的代碼去，如確定使用這一版需消化吸收以下內容 */
+.projects {
+    display: flex;
+    flex-direction: column; /* 確保上下主題排列 */
+    align-items: center; /* 內容水平置中 */
+    max-width: 1200px; /* 限制整體容器的寬度 */
+    margin: 0 auto; /* 置中整個頁面 */
+    padding: 20px; /* 添加內邊距，確保與頁面邊界有間距 */
+    gap: 40px; /* 上下主題之間的距離 */
+    box-sizing: border-box; /* 包含內邊距 */
+}
+
+.projectIntro,
+.projectDetail {
+    display: flex;
+    justify-content: space-between; /* 左右對齊 */
+    align-items: center; /* 垂直置中 */
+    width: 100%; /* 使用父容器的寬度 */
+    gap: 20px; /* 文字與圖片之間的間距 */
+}
+
+.projectDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectText {
+    flex: 1;
+    max-width: 25%;
+    padding: 20px; /* 添加文字區域的內邊距 */
+    box-sizing: border-box; /* 包含內邊距和邊框 */
+}
+
+.projectImg {
+    flex: 3;
+    max-width: 75%;
+}
+
+.projectImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 確保圖片填滿容器且保持比例 */
+}
+
+.projectDetail {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* 與主題容器的寬度一致 */
+    margin: auto; /* 置中 */
+}
+
+.worksText {
+    position: relative; /* 確保文字可以疊加在圖片上 */
+}
+
+.worksText img {
+    width: 100%; /* 確保圖片全寬顯示 */
+    display: block; /* 移除底部的空白間隙 */
+}
+
+.worksText p {
+    position: absolute; /* 絕對定位，疊加在圖片上 */
+    top: 10px; /* 與圖片上方距離 */
+    left: 10px; /* 與圖片左側距離 */
+    margin: 0; /* 移除預設間距 */
+    padding: 10px; /* 添加內距 */
+    font-size: 0.8rem; /* 字體大小 */
+    border-radius: 5px; /* 圓角背景*/
+}
+
+/* v2版本 */
+/* 基本樣式 */
+body {
+    font-family: 'Geologica', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* 項目容器 */
+.projects {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.projectLayout {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.projectIntro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* 文字區域 */
+.projectText {
+    flex: 1;
+    max-width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 畫廊區域 */
+.gallery {
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+/* 滑動圖片容器 */
+.imageSlider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.imageSlider img {
+    width: 100%;
+    flex-shrink: 0;
+    height: auto;
+    object-fit: cover;
+}
+
+/* 指示器樣式 */
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #000;
+}

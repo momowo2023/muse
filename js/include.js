@@ -18,3 +18,33 @@ function loadHTML(id, file) {
     loadHTML("footer",  "/pages/footer.html");
   });
   
+// v2版本
+
+// v2版本
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector(".imageSlider");
+  const indicators = document.querySelectorAll(".indicator");
+
+  let currentIndex = 0;
+
+  function updateSlider() {
+      const slideWidth = slider.children[0].clientWidth;
+      slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+      // 更新指示器的樣式
+      indicators.forEach((indicator, index) => {
+          indicator.classList.toggle("active", index === currentIndex);
+      });
+  }
+
+  // 添加指示器點擊事件
+  indicators.forEach((indicator, index) => {
+      indicator.addEventListener("click", () => {
+          currentIndex = index;
+          updateSlider();
+      });
+  });
+
+  // 初始化滑動視窗
+  updateSlider();
+});
