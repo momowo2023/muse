@@ -383,42 +383,7 @@ footer {
     box-sizing: border-box; /* 包含內邊距和邊框 */
 }
 
-.projectImg {
-    flex: 3;
-    max-width: 75%;
-}
-
-.projectImg img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* 確保圖片填滿容器且保持比例 */
-}
-
-.projectDetail {
-    position: relative;
-    width: 100%;
-    max-width: 1200px; /* 與主題容器的寬度一致 */
-    margin: auto; /* 置中 */
-}
-
-.worksText {
-    position: relative; /* 確保文字可以疊加在圖片上 */
-}
-
-.worksText img {
-    width: 100%; /* 確保圖片全寬顯示 */
-    display: block; /* 移除底部的空白間隙 */
-}
-
-.worksText p {
-    position: absolute; /* 絕對定位，疊加在圖片上 */
-    top: 10px; /* 與圖片上方距離 */
-    left: 10px; /* 與圖片左側距離 */
-    margin: 0; /* 移除預設間距 */
-    padding: 10px; /* 添加內距 */
-    font-size: 0.8rem; /* 字體大小 */
-    border-radius: 5px; /* 圓角背景*/
-}
+/*  */
 
 /* v2版本 */
 /* 基本樣式 */
