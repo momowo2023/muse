@@ -172,7 +172,7 @@ footer {
 .item1 {
     grid-column: 1/4;
     grid-row:1/5;
-    background-image: url('../pictures/Tangible Memories/Tovson.jpg');
+    background-image: url('../pictures/Tangible Memories/TM00.jpg');
 }
 
 .item2{
@@ -316,10 +316,17 @@ footer {
 
 /* 文字區域 */
 .projectText {
+    margin-top: -12px;
     flex: 1;
     max-width: 25%;
     padding: 10px;
     box-sizing: border-box;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.projectText p {
+    line-height: 1.3;
 }
 
 /* 畫廊區域 */
