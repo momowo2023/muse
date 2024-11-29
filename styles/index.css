@@ -121,6 +121,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-weight: 70;
+    width: 100%;
 }
 
 footer p{
@@ -180,7 +181,7 @@ footer p{
     height: auto;
     display: flex;
     justify-content: center;
-    margin-left: 160px;
+    margin-left: 150px;
     font-weight: bold;
 }
 
@@ -399,3 +400,55 @@ footer p{
     background-color: #000;
 }
 
+/* 基本設置保持不變 */
+
+/* 添加響應式設計 */
+@media (max-width: 480px) {
+    .worksGrid {
+        grid-template-columns: 2fr; /* 單列顯示 */
+        grid-template-rows: auto;   /* 自動高度 */
+        grid-gap: 20px;             /* 調整間距 */
+    }
+
+    .worksBody {
+        width: 90%;                 /* 增加佔滿度 */
+        margin-left: 0;             /* 移除多餘的 margin */
+    }
+
+    /* 確保每個 Grid 項目佔滿整行 */
+    .item1, .item2, .item3, .item4,
+    .item5, .item6, .item7, .item8,
+    .item9, .item10, .item11, .item12,
+    .item13, .item14, .item15, .item16,
+    .item17, .item18 {
+        grid-column: 1 / -1;        /* 跨整行 */
+        width: 100%;                /* 寬度設為100% */
+        height: 150px;              /* 可根據需求調整高度 */
+        background-size: cover;     /* 保持圖片覆蓋 */
+        background-position: center;
+    }
+
+    /* 文字大小縮小 */
+    .headerNavbar li a {
+        font-size: 0.9rem;          /* 調整字體大小 */
+        line-height: 50px;          /* 行高縮小 */
+    }
+
+    .brandName a {
+        font-size: 1.2rem;          /* 縮小品牌名稱字體 */
+    }
+
+    footer p {
+        font-size: 10px;            /* 縮小 Footer 文字 */
+    }
+
+    .icon a {
+        font-size: 16px;            /* 縮小 Icon 大小 */
+    }
+
+    .headerNavbar ul {
+        flex-direction: column;     /* 導航列垂直堆疊 */
+        align-items: center;        /* 居中對齊 */
+    }
+}
+ 
