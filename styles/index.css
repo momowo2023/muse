@@ -140,7 +140,7 @@ footer p{
     margin-bottom: 2px;
 }
 .icon a:hover {
-    color: #007bff; /* 滑鼠懸停顏色 */
+    color: #608aeb;
 }
 
 /* cv */
@@ -400,9 +400,8 @@ footer p{
     background-color: #000;
 }
 
-/* 基本設置保持不變 */
 
-/* 添加響應式設計 */
+/* 添加響應式設計 似乎完全無效 */
 @media (max-width: 480px) {
     .worksGrid {
         grid-template-columns: 2fr; /* 單列顯示 */
