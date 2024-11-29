@@ -178,7 +178,7 @@ footer p{
 
 .worksGrid a :hover{
     color: #ff6347;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .worksBody{
@@ -268,7 +268,7 @@ footer p{
 .item12{
     grid-column: 4/7;
     grid-row: 11/15;
-    background-image: url('../pictures/homepage/Happy\ Pills.jpg');
+    background-image: url('../pictures/Happy Pills/HP_00.jpg');
 }
 
 .item13{
