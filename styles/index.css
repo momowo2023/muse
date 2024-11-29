@@ -239,7 +239,7 @@ footer {
 .item11{
     grid-column:1/4;
     grid-row: 11/15;
-    background-image: url('../pictures/homepage/Childhood\ Revisited.jpg');
+    background-image:url('../pictures/Childhood Revisited/CR_00.jpg');
 }
 
 .item12{
@@ -267,7 +267,7 @@ footer {
 .item16{
     grid-column: 4/7;
     grid-row: 16/20;
-    background-image: url('../pictures/homepage/Chungking\ Express.jpg');
+    background-image: url('../pictures/CK Express/CK_Express_00.jpg');
 }
 
 .item17{
