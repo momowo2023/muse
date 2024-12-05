@@ -35,14 +35,14 @@ li {
 }
 
 
-h1,
+
 h2 {
     font-optical-sizing: auto;
     font-size: 3rem;
     font-weight: 300;
 }
 
-
+h1,
 h3 {
     font-size: 1.5rem;
     font-weight: 350;
