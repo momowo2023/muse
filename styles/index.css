@@ -58,6 +58,7 @@ p {
 /* Style for navigation */
 
 header{
+    font-family: "Geologica", serif; 
     display: flex;
     align-items: center;
     justify-content: center;
