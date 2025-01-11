@@ -46,6 +46,7 @@ h1,
 h3 {
     font-size: 1.5rem;
     font-weight: 350;
+    color: #292929;
 }
 
 
@@ -116,18 +117,17 @@ header{
   
 
 footer {
-    padding: 10px 15px;
     color:  #292929;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     font-weight: 70;
+    height: 100px;
     width: 100%;
 }
 
-footer p{
-    font-size: 12px;
+.footer p{
+    font-size: 10px;
     margin: 5px 0; 
 }
 
@@ -138,7 +138,6 @@ footer p{
 .icon a {
     font-size: 20px;
     text-decoration: none;
-    margin: 15px;
     margin-bottom: 2px;
 }
 .icon a:hover {
@@ -182,7 +181,7 @@ footer p{
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.worksBody{
+/* .worksBody{
     width: 80%;
     max-width: 1040px;
     height: auto;
@@ -407,26 +406,256 @@ footer p{
     background-color: #000;
 }
 
-
-/* 添加響應式設計 似乎完全無效 */
-@media (max-width: 720px) {
-    .headerWrap {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    /* 文字大小縮小 */
-  
-
-    footer p {
-        font-size: 10px;            /* 縮小 Footer 文字 */
-    }
-
-    .icon a {
-        font-size: 16px;            /* 縮小 Icon 大小 */
-    }
-
- 
+ /*  */
+/* 作品區域 */
+.worksBody {
+    width: 80%;
+    max-width: 1040px;
+    margin: 30px auto;
 }
- 
+
+.worksGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 60px;
+    width: 100%;
+}
+
+.gridItem {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gridItem:hover p {
+    color: #ff6347; 
+    transition: color 0.3s ease; 
+}
+
+
+.gridItem a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gridItem p {
+    position: absolute;
+    bottom: 30;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    color:  rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* 第一排 */
+.item1 {
+    grid-column: span 3;
+    grid-row: 1;
+    background-image: url('../pictures/Tangible Memories/TM00.jpg');
+    height: 300px;
+}
+
+.item2 {
+    grid-column: span 3;
+    grid-row: 1;
+    background-image: url('../pictures/Biggest Little Things/BLT_00.jpg');
+    height: 300px;
+}
+
+/* 第二排 */
+.item3, .item4, .item5 {
+    grid-column: span 2;
+    grid-row: 2;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.item3 {
+    background-image: url('../pictures/WIsdom Teeth/WT_00.jpg');
+}
+
+.item4 {
+    background-image: url('../pictures/Buy or Die/BOD_00.jpg');
+}
+
+.item5 {
+    background-image: url('/pictures/homepage/1100000111000010\ 1100000111000010.jpg');
+}
+
+/* 第三排 */
+.item6 {
+    grid-column: span 3;
+    grid-row: 3;
+    background-image: url('../pictures/Childhood Revisited/CR_00.jpg');
+    height: 300px;
+}
+
+.item7 {
+    grid-column: span 3;
+    grid-row: 3;
+    background-image: url('../pictures/Happy Pills/HP_00.jpg');
+    height: 300px;
+}
+
+/* 第四排 */
+.item8 {
+    grid-column: span 3;
+    grid-row: 4;
+    background-image: url('../pictures/homepage/Spam.jpg');
+    height: 300px;
+}
+
+.item9 {
+    grid-column: span 3;
+    grid-row: 4;
+    background-image: url('../pictures/CK Express/CK_Express_00.jpg');
+    height: 300px;
+}
+
+/* 懸停效果 */
+.gridItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 響應式設計 */
+/* 小型設備 (小於768px) */
+@media (max-width: 768px) {
+
+    .worksGrid {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 100px;
+        width: 100%; /* 確保網格寬度不超出螢幕 */
+        overflow: cover; 
+    }
+
+    .gridItem {
+        height: 200px; /* 縮小高度 */
+    }
+
+    .item1{
+        grid-column: span1;
+        grid-column: 1;
+    }
+
+    .item2{
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 2;
+    }
+
+    .item3 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 3;
+    }
+
+    .item4{
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 4;
+    }
+
+    .item5 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 5;
+    }
+
+    .item6 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 6;
+    }
+
+    .item7 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 7;
+    }
+
+    .item8 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 8;
+    }
+
+    .item9 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 9;
+    }
+}
+
+
+
+
+
+/* 超小型設備 (小於360px) */
+@media (max-width: 360px) {
+    
+    .worksGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        width: 20%;
+        height: auto;
+        overflow:hidden;
+    }
+    
+
+    .gridItem {
+        height: auto; /* 進一步縮小高度 */
+    }
+
+    .gridItem p {
+        font-size: 0.9rem; /* 字體縮小 */
+    }
+    
+
+    .item1{
+        grid-column: span1 ; /* 每項占滿一整列 */
+        grid-row: 1;
+    }
+
+    .item2{
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 2;
+    }
+
+    .item3 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 3;
+    }
+
+    .item4{
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 4;
+    }
+
+    .item5 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 5;
+    }
+
+    .item6 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 6;
+    }
+
+    .item7 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 7;
+    }
+
+    .item8 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 8;
+    }
+
+    .item9 {
+        grid-column: span 1; /* 每項占滿一整列 */
+        grid-row: 9;
+    }
+}
