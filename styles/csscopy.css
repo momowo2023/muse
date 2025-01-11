@@ -115,19 +115,20 @@ header{
   
 
 footer {
-    padding: 10px 15px;
+    
     color:  #292929;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     font-weight: 70;
+    height: 100px;
     width: 100%;
 }
 
-footer p{
-    font-size: 12px;
+.footer p{
+    font-size: 10px;
     margin: 5px 0; 
+    
 }
 
 .icon{
@@ -137,7 +138,6 @@ footer p{
 .icon a {
     font-size: 20px;
     text-decoration: none;
-    margin: 15px;
     margin-bottom: 2px;
 }
 .icon a:hover {
@@ -217,7 +217,7 @@ footer p{
 }
 
 .item3 {
-    background-image: url('../pictures/Wisdom Teeth/WT_00.jpg');
+    background-image: url('../pictures/WIsdom Teeth/WT_00.jpg');
 }
 
 .item4 {
@@ -270,9 +270,9 @@ footer p{
 
     .worksGrid {
         grid-template-columns: repeat(1, 1fr); 
-        gap: 80px;
+        gap: 100px;
         width: 100%; /* 確保網格寬度不超出螢幕 */
-        overflow: hidden; /* 避免元素超出容器邊界 */
+        overflow: cover; 
     }
 
     .gridItem {
