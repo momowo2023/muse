@@ -179,6 +179,12 @@ footer p{
     height: 100%;
 }
 
+.gridItem a img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover; /* 让图片适应容器 */
+}
+
 .gridItem p {
     position: absolute;
     bottom: 30;
@@ -270,13 +276,17 @@ footer p{
 
     .worksGrid {
         grid-template-columns: repeat(1, 1fr); 
-        gap: 80px;
+        gap: 20px;
         width: 100%; /* 確保網格寬度不超出螢幕 */
         overflow: hidden; /* 避免元素超出容器邊界 */
     }
 
     .gridItem {
-        height: 200px; /* 縮小高度 */
+        height: 150px; /* 縮小高度 */
+    }
+
+    .gridItem p {
+        font-size: 0.9rem;
     }
 
     .item1{
@@ -343,11 +353,17 @@ footer p{
     
 
     .gridItem {
-        height: auto; /* 進一步縮小高度 */
+        height: auto;
     }
 
     .gridItem p {
-        font-size: 0.9rem; /* 字體縮小 */
+        font-size: 0.8rem; /* 字體縮小 */
+        padding: 5px;
+    }
+
+    .gridItem img {
+        width: 100%; /* 确保图片适应容器宽度 */
+        height: auto;
     }
 
     .item1{
