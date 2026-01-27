@@ -211,9 +211,7 @@ footer {
 .item3, .item4, .item5 {
     grid-column: span 2;
     grid-row: 2;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
+    height: 400px;
 }
 
 .item3 {
